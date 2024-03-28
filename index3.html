@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style> 
+
+.wrapper {overflow: auto;}
+
+#main {margin-left: 4px;}
+
+#leftsidebar {
+  float: none;
+  width: auto;
+}
+
+#menulist {
+  margin: 0;
+  padding: 0;
+}
+
+.menuitem {
+  background: #CDF0F6;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 4px;
+  padding: 2px;
+}
+
+@media screen and (min-width: 480px) {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+}
+
+    div {
+      width: 300px;
+      height: 100px;
+      background-color: yellow;
+      border: 1px solid black;
+      transform: translate(50px,100px);
+    }
+
+    div#myDiv {
+  transform: rotate(20deg);
+}
+
+div#myDiv2 {
+  transform: rotate(-20deg);
+}
+
+        
+#myDiv3 {
+  transform: rotateX(150deg);
+}
+
+#myDiv4 {
+  transform: rotateZ(-90deg);
+}
+
+img {
+  border-radius: 15px;
+  -webkit-box-reflect: below;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.mask1 {
+  -webkit-mask-image: url(mask.png);
+  mask-image: url(mask.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+}
+
+body {
+  background-color: pink;
+}
+
+@media screen and (min-width: 880px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+
+    </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="leftsidebar">
+              <ul id="menulist">
+                <li class="menuitem">Menu-item 1</li>
+                <li class="menuitem">Menu-item 2</li>
+                <li class="menuitem">Menu-item 3</li>
+                <li class="menuitem">Menu-item 4</li>
+                <li class="menuitem">Menu-item 5</li>
+              </ul>
+            </div>
+            
+            <div id="main">
+              <h1>Resize the browser window to see the effect!</h1>
+              <p>This example shows a menu that will float to the left of the page if the viewport is 480 pixels wide or wider. If the viewport is less than 480 pixels, the menu will be on top of the content.</p>
+            </div>
+          </div>
+    <h1>The translate() Method</h1>
+    <p>The translate() method moves an element from its current position:</p>
+    
+    <div>
+    This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+    </div>
+    
+    <div id="myDiv">
+        This div element is rotated clockwise 20 degrees.
+        </div>
+        
+    <div id="myDiv2">
+            This div element is rotated counter-clockwise with 20 degrees.
+            </div>
+            
+    <div id="myDiv3">
+                This div element is rotated 150 degrees.
+                </div>
+                <div id="myDiv4">
+                    This div element is rotated -90 degrees.
+                    </div>
+                    
+    <h2>Rounded Image</h2>
+
+    <p>Use the border-radius property to create rounded images:</p>
+                    
+    <img src="4430292.jpg" alt="NewUkr" width="400" height="300">
+    
+    <h1>The mask-image Property</h1>
+
+    <h3>An image with a mask layer image:</h3>
+    <div class="mask1">
+    <img src="20190517-_MG_3111.jpg" alt="Cinque Terre" width="600" height="400">
+    </div>
+
+    <h3>Original image:</h3>
+    <img src="20190517-_MG_3111.jpg" alt="Cinque Terre" width="600" height="400">
+    
+
+
+
+    </body>
+</html>
